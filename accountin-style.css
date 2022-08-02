@@ -1,0 +1,46 @@
+.header-all{
+    display: flex;
+    justify-content:space-around;
+    padding: 25px 25px;
+    width: 100%;
+    background-image:url("./Screenshot\ 2022-08-01\ 233720.png");
+}
+.logo-img{
+    border-radius: 20%;
+    width: 200px;
+    align-items: center;
+    }
+    h1{
+        color: black;
+        line-height :140px;
+        /* text-shadow: 5px 5px 6px rgb(196 12 50); */
+        font-size: 40px;
+        font-style: italic;
+        font-weight: bold; 
+    
+    }
+    li {
+        font-size: 30px;
+        line-height :200px;
+
+    }
+    main{
+        margin: 200px;
+    }
+    p{
+        font-size: 30px;
+        line-height :200px;  
+    }
+    .footer-inf{
+        display: flex;
+        padding: 25px 25px;
+        width: 100%;
+        font-size: 50px;
+    
+       }
+       a{
+        padding: 25px 25px; 
+       }
+       body{
+        background-color:aliceblue ;
+       }
