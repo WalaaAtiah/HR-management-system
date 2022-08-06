@@ -2,18 +2,21 @@
 
 let ID=999;
 function Employee (name,department,level,image){
+this.idNumber ;
 this.name =name;
 this.department=department;
 this.level=level;
 this.image=image;
-// Employee.all.push(this)
+this.net;
+Employee.all.push(this)
 }
 
-// Employee.all=[]
+Employee.all=[]
 
 Employee.prototype.employeeID =function () {
     ID++
-   return ID ;
+    this.idNumber=ID;
+   
 }
 
 Employee.prototype.salary = function(){
@@ -31,7 +34,7 @@ Employee.prototype.salary = function(){
     break;
     }
     let netSalary = Math.floor(salary - salary * 7.5/100) ;
-     return netSalary;
+     this.net= netSalary;
 }
 
 
@@ -45,58 +48,26 @@ let employee7 =new Employee("Hadi Ahmad" ,"Finance" ,"Mid-Senior" ,"https://th.b
 
 
 
+
+
 Employee.prototype.render = function(){
-    document.write(`<h2 style=font-size:30px> Employee ID : ${this .employeeID()}</h2>`);
+    document.write(`<h2 style=font-size:30px> Employee ID : ${this .idNumber}</h2>`);
+    document.write(`<h2 style=font-size:30px> Employee ID : ${this .level}</h2>`);
     document.write(`<h2 style=font-size:30px> Employee name : ${this .name}</h2>`);
     document.write(`<h2 style=font-size:30px> Department : ${this.department}</h2>`);
-    document.write(`<h2 style=font-size:30px> Employee salary : ${this.salary()}</h2>`);
+    document.write(`<h2 style=font-size:30px> Employee salary : ${this.net}</h2>`);
     document.write(`<h2 style=font-size:30px> --------------------------------------------------</h2>`);
+    document.write(`<br>`);
+
 }
 
-employee1.render();
-employee2.render();
-employee3.render();
-employee4.render();
-employee5.render();
-employee6.render();
-employee7.render();
 
 
-// IF i call it the id number start with 1007 Becouse that when I write it in html BY using render method I already call it.
-// employee1.employeeID();
-// employee2.employeeID();
-// employee3.employeeID();
-// employee4.employeeID();
-// employee5.employeeID();
-// employee6.employeeID();
-// employee7.employeeID();
-
-// employee1.salary();
-// employee2.salary();
-// employee3.salary();
-// employee4.salary();
-// employee5.salary();
-// employee6.salary();
-// employee7.salary();
-
-
-// function render (){
-//     for (let i=0;i<Employee.all.length;i++){
-//     document.write(`<h2 style=font-size:30px> Employee ID : ${Employee.all[i].employeeID()}</h2>`);
-//     document.write(`<h2 style=font-size:30px> Employee name : ${Employee.all[i].name}</h2>`);
-//     document.write(`<h2 style=font-size:30px> Department : ${Employee.all[i].department}</h2>`);
-//     document.write(`<h2 style=font-size:30px> Employee salary : ${Employee.all[i].salary()}</h2>`);
-//     document.write(`<h2 style=font-size:30px> --------------------------------------------------</h2>`);
-
-
-// }
-// }
-// render()
-
-
-
-
-
+for(let i=0;i<Employee.all.length;i++){
+    Employee.all[i].employeeID();
+    Employee.all[i].salary();
+    Employee.all[i].render();
+}
 
 
 
