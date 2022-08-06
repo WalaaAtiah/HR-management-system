@@ -40,13 +40,13 @@ Employee.prototype.salary = function(){
 }
 
 
-let employee1 =new Employee("Ghazi Samer" ,"Administration" ,"Senior" ,"/img/Ghazi.jpg");
-let employee2 =new Employee("Lana Ali" ,"Finance" ,"Senior" ,"/img/Lana.jpg");
-let employee3 =new Employee("Tamara Ayoub" ,"Marketing" ,"Senior" ,"/img/Tamara.jpg");
-let employee4 =new Employee("Safi Walid" ,"Administration" ,"Mid-Senior" ,"/img/Safi.jpg");
-let employee5 =new Employee("Omar Zaid" ,"Development" ,"Senior" ,"/img/Omar.jpg");
-let employee6 =new Employee("Rana Saleh" ,"Development" ,"Junior" ,"/img/Rana.jpg");
-let employee7 =new Employee("Hadi Ahmad" ,"Finance" ,"Mid-Senior" ,"/img/Hadi.jpg");
+let employee1 =new Employee("Ghazi Samer" ,"Administration" ,"Senior" ,"./img/Ghazi.jpg");
+let employee2 =new Employee("Lana Ali" ,"Finance" ,"Senior" ,"./img/Lana.jpg");
+let employee3 =new Employee("Tamara Ayoub" ,"Marketing" ,"Senior" ,"./img/Tamara.jpg");
+let employee4 =new Employee("Safi Walid" ,"Administration" ,"Mid-Senior" ,"./img/Safi.jpg");
+let employee5 =new Employee("Omar Zaid" ,"Development" ,"Senior" ,"./img/Omar.jpg");
+let employee6 =new Employee("Rana Saleh" ,"Development" ,"Junior" ,"./img/Rana.jpg");
+let employee7 =new Employee("Hadi Ahmad" ,"Finance" ,"Mid-Senior" ,"./img/Hadi.jpg");
 
 
 
