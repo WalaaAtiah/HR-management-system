@@ -20,3 +20,7 @@
    - _By using constructor methode to creat object for each employee and writ there inforemation in HTML page by using render method (document.write())_
    - By using prototype method to creat method and add to the object out sid the constructor.
 
+## Task 10 ##
+- replace render method (document.write())_by dom manpiulation  to write to HTMLpage .
+- refactor the render prototype method to render each employee's information in a separate card on the home page
+
