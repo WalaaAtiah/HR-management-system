@@ -1,4 +1,5 @@
 'use strict';
+console.log(document);
 
 let ID=999;
 function Employee (name,department,level,image){
@@ -8,7 +9,6 @@ this.department=department;
 this.level=level;
 this.image=image;
 this.net;
-this.num;
 Employee.all.push(this)
 }
 
@@ -17,7 +17,6 @@ Employee.all=[]
 Employee.prototype.employeeID =function () {
     ID++
     this.idNumber=ID;
-    this.num=ID-1000;
    
 }
 
@@ -52,10 +51,36 @@ let employee7 =new Employee("Hadi Ahmad" ,"Finance" ,"Mid-Senior" ,"./img/Hadi.j
 
 
 const main=document.getElementsByTagName('main');
+const Administration =document.getElementById("Administration");
+// console.log(Administration);
+const Finance =document.getElementById("Finance");
+// console.log(Finance);
+const Marketing =document.getElementById("Marketing");
+// console.log(Marketing);
+const Development =document.getElementById("Development");
+// console.log(Development);
+
+
 Employee.prototype.render = function(){
     const divEl = document.createElement('div');
-    
-    main[0].appendChild(divEl);
+   
+    switch (this.department){
+        
+        case "Administration":
+            Administration.appendChild(divEl);
+        break;
+        case "Finance":
+            Finance.appendChild(divEl);
+        break;
+        case "Marketing":
+            Marketing.appendChild(divEl);
+        break;
+        case "Development":
+            Development.appendChild(divEl);
+        break;
+        }
+
+    // main[0].appendChild(divEl);
 
     const imgEl = document.createElement('img');
     imgEl.src = this.image;
@@ -82,7 +107,9 @@ for(let i=0;i<Employee.all.length;i++){
     Employee.all[i].render();
 }
 
-
+// const hi =document.getElementById("ggg");
+// console.log(hi);
+// hi.textContent = "This is a paragraph";
 
 
 

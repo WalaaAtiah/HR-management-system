@@ -24,19 +24,26 @@
         line-height :200px;
 
     }
-
-    main{
+    h2{
+      color: black;
+      line-height :100px;
+    
+      font-size: 30px;
+      font-style: italic;
+      font-weight: bold; 
+    }
+    section{
+      color: #477d57;
     display: flex;
-    justify-content:space-around;
+    justify-content:left;
     flex-wrap: wrap;
     padding: 25px 25px;
     width: 100%;
     align-content: center;
-    
-   
+    gap: 30px
        
       }
-
+      
      div{
         background:#477d57;
         padding: 10px 10px;
